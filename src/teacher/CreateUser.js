@@ -48,6 +48,7 @@ function CreateUser() {
         const user = await axios.post(
           'https://6397045686d04c76338811e9.mockapi.io/users',
           values,
+          console.log(values),
         )
         navigate(`portal/user-list`)
       } catch (error) {
